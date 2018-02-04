@@ -1,10 +1,12 @@
 body, html {
     height: 100%;
+    background: black;
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
+    margin-top: 50px;
 }
 
 span {
@@ -12,10 +14,15 @@ span {
     font-family: Montserrat,sans-serif;
 }
 
+canvas {
+    display: block;
+    position: absolute;
+}
+
 .page {
     height: 100%;
     background-color: rgb(204, 0, 1);
-    padding-top: 50px;
+    padding-left: 0px;
 }
 
 .wolf-logo {
@@ -27,5 +34,8 @@ span {
 
 .coming-date {
     font-size: 40px;
+}
+
+.col-md-4 {
     
 }

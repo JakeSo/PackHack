@@ -8,8 +8,8 @@
   <meta name="author" content="NC State">
 
   <!-- CSS -->
-  <link type="text/css" rel="stylesheet" href="PackHackCSS.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="PackHackCSS.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -17,7 +17,8 @@
   <!-- Logo -->
   <link rel="logo" href="PackHack_Logo.png">
     
-
+  <!-- Javascript -->
+  <script src="PackHackJS.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -25,11 +26,12 @@
 </head>
 
 <body>
-    <div class="container-fluid page">
-        <div class="row">
+    <div class="page container-fluid">
+        <canvas id="c"></canvas>
+        <div class="row" style="position: absolute; width: 100%;">
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
-                <img class="center-block" src="PackHack_Logo.png" />
+                <img src="PackHack_Logo.png" />
                 <br />
                 <br />
                 <span>PackHacks 2018 at NC State University</span>
