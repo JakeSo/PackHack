@@ -36,6 +36,9 @@ canvas {
     font-size: 40px;
 }
 
-.col-md-4 {
-    
+/* For phones/tablets make logo occupy full width */
+@media only screen and (max-width: 767px){
+    .offset-4 {
+        margin-left: 16.666667%;
+    }
 }
