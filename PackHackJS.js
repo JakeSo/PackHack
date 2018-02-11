@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var ctx = c.getContext("2d");
     
     //making the canvas full screen
-    c.height = screen.availHeight;
-    c.width = screen.availWidth; //screen width so when readjusting broswer size binary rain doesnt get cut off
+    c.height = screen.height;
+    c.width = screen.width; //screen width so when readjusting broswer size binary rain doesnt get cut off
 
     //binary characters - taken from the unicode charset
     var binary = "10010100011110100101010011101000101010";
