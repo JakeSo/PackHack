@@ -1,5 +1,7 @@
 body, html {
     height: 100%;
+    width: 100%;
+    margin: 0px;
     background: black;
 }
 
@@ -23,6 +25,16 @@ canvas {
     height: 100%;
     background-color: rgb(204, 0, 1);
     padding-left: 0px;
+}
+
+.header-inset{
+    width: 100%;
+    position: absolute;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 
 .wolf-logo {

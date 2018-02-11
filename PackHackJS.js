@@ -1,14 +1,18 @@
+//document ready
 document.addEventListener("DOMContentLoaded", function(event) { 
+    
+    //Globals
+    var fullSite = 0;
     
     // Falling binary effect
     // ** Adapted from matrix rain animation courtesy of thecodeplayer
     // ** Link: http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript
     var c = document.getElementById("c");
     var ctx = c.getContext("2d");
-
+    
     //making the canvas full screen
-    c.height = window.innerHeight;
-    c.width = window.innerWidth;
+    c.height = screen.availHeight;
+    c.width = screen.availWidth; //screen width so when readjusting broswer size binary rain doesnt get cut off
 
     //binary characters - taken from the unicode charset
     var binary = "10010100011110100101010011101000101010";
