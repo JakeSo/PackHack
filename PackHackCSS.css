@@ -30,6 +30,7 @@ canvas {
 .header-inset{
     width: 100%;
     position: absolute;
+    margin-left: 0px;
 }
 
 .col-centered {
