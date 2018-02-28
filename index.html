@@ -14,12 +14,21 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   
   <!-- Logo -->
   <link rel="logo" href="PackHack_Logo.png">
+  <link rel="logo" href="PackHack_Logo_Red.png">
     
-  <!-- Javascript -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+  <!-- Custom Javascript -->
   <script src="PackHackJS.js"></script>
+    
+  <!-- Typeform -->
+    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -27,22 +36,115 @@
 </head>
 
 <body>
-    <div class="page container-fluid">
-        <div id="header" class="row">
-            <canvas id="c"></canvas>
-            <div class="row header-inset">
-                <div class="col-8 col-md-4 col-centered text-center">
-                    <img src="PackHack_Logo.png" />
-                    <br />
-                    <br />
-                    <span>PackHacks 2018 at NC State University</span>
-                    <br />
-                    <br />
-                    <br />
-                    <h1>Coming March 24th</h1>
+    <canvas id="c"></canvas>
+    <div class="theme-picker">
+        <div class="color-ball theme-1 active-theme"></div>
+        <div class="color-ball theme-2"></div>
+        <div class="color-ball theme-3"></div>
+        <div class="color-ball theme-4"></div>
+        <div class="color-ball theme-5"></div>
+        <div id="theme-pullout"><i class="fas fa-angle-right fa-2x"></i></div>
+    </div>
+    <div class="vg-picker"></div>
+    <div id="header">
+        <div class="col-8 col-md-4 col-centered text-center">
+            <img src="PackHack_Logo.png" />
+            <br />
+            <br />
+            <span>PackHacks 2018 at NC State University</span>
+            <br />
+            <br />
+            <a href="https://antoniogargano.typeform.com/to/VpqL57" target="_blank"><button id="registerBtn" class="btn">Register</button></a>
+        </div>
+    </div>
+    <div id="details">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 section-title">
+                    <h2>Details</h2>
+                    <hr />
+                </div>
+                <div class="col-lg-4 icon-section divider">
+                    <i class="fas fa-code fa-3x"></i>
+                    <h4><b>Hack</b></h4>
+                    <span>No, it's not that kind of hacking. Hackathons are 24 hour competitions which provide students with the opportunity to express themselves and tackle challenging problems using technology. People with and without technical backgrounds come together, form teams around a certain topic or idea, and collaboratively code/build a unique solution from scratch — these generally take shape in the form of websites, mobile apps, or hardware designs. So grab a couple friends and come code and build to your hearts desire.</span>
+                </div>
+                <div class="col-lg-4 icon-section divider">
+                    <i class="fas fa-coffee fa-3x"></i>
+                    <h4><b>Experience</b></h4>
+                    <span>PackHacks is free for all students to attend – what this means is we’ll provide you with everything you need to be comfortable while you’re hacking. This includes meals, snacks, activities, and t-shirts as well as workshops on important, practical subjects like building a website or developing your first app. We encourage students to use PackHacks not only as a forum to test and enhance their technical skills, but also to socialize with students with similar interests and to have fun!</span>
+                </div>
+                <div class="col-lg-4 icon-section">
+                    <i class="fas fa-trophy fa-3x"></i>
+                    <h4><b>Prizes</b></h4>
+                    <span>In addition to the great amenities you’ll receive just for participating in PackHacks, there are also many prizes available to teams that display exceptional creativity and technical prowess in the competition! Judges will award multiple prizes at the end of the 24-hour period, including overall 1st, 2nd, and 3rd place prizes for the entire competition. However, there’s no pressure to be competitive; newcomers are encouraged to use PackHacks as an opportunity to learn and explore, but anyone who wants to compete should do so!</span>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>FAQ</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="questions col-md-9 col-centered text-center">
+                    <div class="question col-centered">
+                        <h4>How much does the event cost?</h4>
+                        <span>$0 - PackHacks is 100% free for everyone to attend!</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>When is PackHacks?</h4>
+                        <span>April 21</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>Where is PackHacks hosted?</h4>
+                        <span>North Carolina State University - the exact location will be announced in the near future.</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>How does the competition work?</h4>
+                        <span>Teams of up to 4 will work together to code or build a project and present it to the judges. This project can be or do anything; there are no constraints on what teams are allowed to develop. The judges will then select the best overall projects as well as projects which excel in certain criteria (most creative, best looking, etc). Every project must be fully completed at the hackathon - no outside work/help is permitted.</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>Who can participate?</h4>
+                        <span>PackHacks is open to both high school and college students (Cubs and Wolves divisions). High school students will compete only against each other and will have 12 hours rather than the full 24 to complete their projects. However, they will still be allowed to participate in all activities and workshops while attending. An awards ceremony for just high school students will then be held on Saturday after the 12 hour mark. College students will continue coding until the 24 hour mark has been reached on Sunday. </span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>What do I get?</h4>
+                        <span>All participants will receive meals, snacks, t-shirts, and "swag". Students also get the valuable experience of working on projects together and the opportunity to take workshops which teach practical computer science skills.</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>Do I need prior experience?</h4>
+                        <span>No experience, no problem. We'll be having workshops on making apps and working on hardware throughout the event, and a hackathon is a great environment to focus on learning how to code for an uninterrupted, 24-hour period.</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>Do I need to bring a computer?</h4>
+                        <span>Yes, all participants must come with their own laptop if they intend to code during the competition. Laptops cannot be provided.</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>Will hardware be provided?</h4>
+                        <span>Yes, a limited amount of hardware will be provided, but students are encouraged to bring their own if they have a specific device in mind they would like to use.</span>
+                    </div>
+                    <div class="question col-centered">
+                        <h4>Who do I contact for more info?</h4>
+                        <span>ncsupackhacks@gmail.com</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="footer" class="row no-gutters">
+            <div class="col-12 col-centered text-center footer-panel">
+                <br />
+                <br />
+                <h4>PackHacks</h4>
+                <br />
+                <a href="#header" style="margin-left: -84px" id="backToTopBtn" title="Back to Top"><i class="fas fa-arrow-up fa-2x"></i></a>
+                <a href="mailto:ncsupackhacks@gmail.com" style="margin-left: -16px;"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="https://www.facebook.com/packHacks2018/" target="_blank" style="margin-left: 56px"><i class="fab fa-facebook-square fa-2x"></i></a>
+            </div>
+        </div>
 </body>
 </html>
