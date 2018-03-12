@@ -2,8 +2,6 @@
 $( document ).ready(function() { 
     
     //Globals
-    var fullSite = 0;
-    var color
     var canvasBackgroundColor = "rgb(204, 0, 0)",
         canvasTextColor = "rgb(255, 255, 255)",
         activeImage = "PackHack_Logo.png",
@@ -20,8 +18,9 @@ $( document ).ready(function() {
      * 1) Use screen width so when readjusting browser siz binary rain doesnt get cut off
      * 2) Subtract 2 so that the canvas width matches width: 100% (2?)
      */
-    c.height = screen.availHeight;
-    c.width = screen.availWidth;
+    var longerWidth = screen.availHeight > screen.availWidth ? screen.availHeight : screen.availWidth;
+    c.height = longerWidth;
+    c.width = longerWidth;
     
     //binary characters - taken from the unicode charset
     var binary = "10010100011110100101010011101000101010";
