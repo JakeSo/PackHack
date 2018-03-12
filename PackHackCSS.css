@@ -159,7 +159,6 @@ canvas {
     color: var(--red);
     background-color: var(--off-white);
     width: 100%;
-    text-shadow: 2px 2px 5px rgba(45, 45, 42, .4);
 }
 
 .icon-section {
@@ -167,12 +166,12 @@ canvas {
 }
 
 .icon-section svg {
+    padding: 20px;
     margin-bottom: 20px;
     color: var(--off-white) !important;
     background-color: var(--red);
     height: 100px;
     width: 100px !important;
-    padding: 20px;
     border-radius: 100%;
 }
 
@@ -258,6 +257,7 @@ canvas {
 
 .questions .question:nth-child(odd) {
     background-color: var(--red);
+    color: var(--off-white);
 }
 
 .questions .question:nth-child(odd) h4 {
