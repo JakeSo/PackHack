@@ -166,7 +166,6 @@ canvas {
 }
 
 .icon-section svg {
-    padding: 20px;
     margin-bottom: 20px;
     color: var(--off-white) !important;
     background-color: var(--red);
@@ -175,15 +174,8 @@ canvas {
     border-radius: 100%;
 }
 
-.icon-section svg:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+.icon-holder svg{
+    padding: 20px;
 }
 
 .divider:before {
