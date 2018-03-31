@@ -19,8 +19,13 @@ $( document ).ready(function() {
      * 2) Subtract 2 so that the canvas width matches width: 100% (2?)
      */
     var longerWidth = screen.availHeight > screen.availWidth ? screen.availHeight : screen.availWidth;
-    c.height = longerWidth;
-    c.width = longerWidth;
+    c.height = screen.availHeight;
+    c.width = screen.availWidth;
+    // isiPhone returns true here for non-iPhone even though its the same exact conditional... *sigh* smh
+    if(navigator.platform.indexOf("iPod") != -1 || navigator.platform.indexOf("iPhone") != -1) {
+        c.height = longerWidth;
+        c.width = longerWidth;
+    }
     
     //binary characters - taken from the unicode charset
     var binary = "10010100011110100101010011101000101010";
