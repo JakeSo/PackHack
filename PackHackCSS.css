@@ -149,9 +149,14 @@ canvas {
     background-color: var(--grey);
 }
 
+#schedule {
+    background-color: var(--off-white);
+    padding: 80px 0px 0px 0px;
+}
+
 #details {
     background-color: var(--off-white);
-    padding: 80px 0px;
+    padding: 0px 0px 80px 0px;
 }
 
 .section-title {
