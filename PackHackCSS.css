@@ -156,7 +156,7 @@ canvas {
 
 #details {
     background-color: var(--off-white);
-    padding: 0px 0px 80px 0px;
+    padding: 80px 0px;
 }
 
 .section-title {
