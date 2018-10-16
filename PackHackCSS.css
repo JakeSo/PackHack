@@ -246,9 +246,6 @@ canvas {
     transition: all 2s;
 }
 
-.question:hover h4{
-}
-
 .questions .question:nth-child(odd) {
     background-color: var(--red);
     color: var(--off-white);
