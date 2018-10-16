@@ -220,9 +220,7 @@ canvas {
 }
 
 .question:hover {
-    max-height: 66px;
     cursor: pointer;
-    transition: max-height .5s, height .5s;
 }
 
 .reveal-answer {
@@ -249,7 +247,6 @@ canvas {
 }
 
 .question:hover h4{
-    padding: 10px 0px;
 }
 
 .questions .question:nth-child(odd) {
