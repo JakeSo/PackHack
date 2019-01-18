@@ -1,5 +1,5 @@
 //document ready
-$( document ).ready(function() { 
+$(document).ready(function () {
     
     //Globals
     var canvasBackgroundColor = "rgb(204, 0, 0)",
@@ -22,7 +22,7 @@ $( document ).ready(function() {
     c.height = screen.availHeight;
     c.width = screen.availWidth;
     // isiPhone returns true here for non-iPhone even though its the same exact conditional... *sigh* smh
-    if(navigator.platform.indexOf("iPod") != -1 || navigator.platform.indexOf("iPhone") != -1) {
+    if(navigator.platform.indexOf("iPod") !== -1 || navigator.platform.indexOf("iPhone") !== -1) {
         c.height = longerWidth;
         c.width = longerWidth;
     }
@@ -33,10 +33,10 @@ $( document ).ready(function() {
     binary = binary.split("");
 
     var font_size = 10;
-    if(window.innerWidth < 600) {
+    if( window.innerWidth < 600 ) {
         font_size = 7;
     }
-    var columns = c.width/font_size; //number of columns for the rain
+    var columns = c.width / font_size; //number of columns for the rain
     //an array of drops - one per column
     var drops = [];
     //x below is the x coordinate
@@ -121,4 +121,27 @@ $( document ).ready(function() {
         canvasBackgroundColor = mainColor;
         canvasTextColor = altColor;
     });
+    
+});
+
+// Highlight current section user is viewing in the side navbar
+$(window).scroll(function () {
+    var pageScrollTop = $(window).scrollTop() + $(window).height()/2;
+
+    if($("section:first").offset().top > pageScrollTop)
+        return;
+
+    $("#sideNav a").each(function() {
+        var section = $(this).attr("href");
+        var sectionScrollTop = $(section).offset().top;
+        var sectionScrollBottom = sectionScrollTop + $(section).outerHeight(true);
+        var isInSection = sectionScrollTop < pageScrollTop && pageScrollTop < sectionScrollBottom;
+        if(isInSection) {
+            if(!$(this).hasClass("active")){
+                $("#sideNav a").removeClass("active");
+                $(this).addClass("active");
+            }
+        }
+
+    })
 });
