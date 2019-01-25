@@ -257,20 +257,20 @@ canvas {
 }
 
 #footer {
-    height: 200px;
+    padding: 50px 0px;
     width: 100%;
     color: var(--off-white);
     background-color: var(--red);
 }
 
-#footer a {
+#footer > div > a {
     color: var(--off-white);
-    position: absolute;
-    left: 50%;
+    margin: 30px;
 }
 
-#footer .row {
-    margin: 0;
+#footer > * {
+    margin-bottom: 20px;
+    color: var(--off-white);
 }
 
 /* For phones/tablets make logo occupy full width */
