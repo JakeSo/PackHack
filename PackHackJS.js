@@ -1,5 +1,6 @@
 //document ready
 $(document).ready(function () {
+    window.scrollTo(0, 1);
     
     //Globals
     var canvasBackgroundColor = "rgb(204, 0, 0)",
