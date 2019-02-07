@@ -258,6 +258,28 @@ canvas {
 #sponsors {
   background-color: var(--off-white);
 }
+.sponsor {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    padding-top: 0;
+    max-width: 33%;
+}
+.sponsor-row {
+    display: flex;
+    max-height: 100px;
+    margin-bottom: 35px;
+}
+.sponsor img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    -webkit-user-drag: none;
+}
 #footer {
     padding: 50px 0px;
     width: 100%;
