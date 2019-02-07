@@ -15,7 +15,7 @@ $(document).ready(function () {
     
     /* 
      * Make the canvas full screen
-     * 1) Use screen width so when readjusting browser siz binary rain doesnt get cut off
+     * 1) Use screen width so when readjusting browser size binary rain doesnt get cut off
      * 2) Subtract 2 so that the canvas width matches width: 100% (2?)
      */
     var longerWidth = screen.availHeight > screen.availWidth ? screen.availHeight : screen.availWidth;
@@ -86,11 +86,6 @@ $(document).ready(function () {
             (navigator.platform.indexOf("iPod") != -1)
         );
     }
-    
-    //Open answers for questions in FAQ
-    $('.question').click(function() {
-        $(this).toggleClass("reveal-answer");
-    });
     
     $("#theme-pullout").click(function() {
         $(".theme-picker").toggleClass('active-theme-picker');
