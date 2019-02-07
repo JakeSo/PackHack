@@ -1,2 +1,2 @@
 # PackHack
-Website for NC State PackHack
+Website for NC State PackHacks
