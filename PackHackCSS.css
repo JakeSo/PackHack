@@ -261,6 +261,14 @@ section:first-of-type {
     .divider:before {
         border-right: 0px;
     }
+    
+    .sponsor-row {
+        margin-bottom: 10px;
+    }
+    
+    #mlh-trust-badge {
+        display: none!important;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
