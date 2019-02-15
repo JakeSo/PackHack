@@ -98,15 +98,13 @@ $(document).ready(function () {
         $('.color-ball').removeClass('active-theme');
         $(this).addClass('active-theme');
         if($('.color-ball').index(this) == 1) {
-            activeImage = "PackHack_Logo_Red.png";
-            nonActiveImage = "PackHack_Logo.png";
+            activeImage = "images/PackHack_Logo_Red.png";
             $('body').css('color', 'white');
         } else {
-            activeImage = "PackHack_Logo.png";
-            nonActiveImage = "PackHack_Logo_Red.png";
+            activeImage = "images/PackHack_Logo.png";
             $('body').css('color', '#2D2D2A');
         }
-        $('img').attr('src', activeImage);
+        $('#banner-logo').attr('src', activeImage);
         
         var mainColor = $(this).css('background-color');
         var altColor = $(this).css('border-color');
