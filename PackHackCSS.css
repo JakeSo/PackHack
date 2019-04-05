@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --red: #CC0000;
-    --off-white: #F3F3F3;
+    --white: #FFF;
     --grey: #CED3DC;
     --black: #2D2D2A;
 }
@@ -116,7 +116,7 @@ canvas {
 }
 
 #header {
-    color: var(--off-white);
+    color: var(--white);
     height: 100vh;
 }
 
@@ -128,7 +128,7 @@ canvas {
 #registerBtn {
     position: relative;
     margin-bottom: 50px;
-    background-color: var(--off-white);
+    background-color: var(--white);
     color: var(--red);
 }
 
@@ -147,7 +147,7 @@ canvas {
 }
 
 section {
-    background-color: var(--off-white);
+    background-color: var(--white);
     padding-bottom: 80px;
 }
 
@@ -156,7 +156,7 @@ section:first-of-type {
 }
 
 #schedule {
-    background-color: var(--off-white);
+    background-color: var(--white);
     padding: 80px 0px 0px 0px;
 }
 
@@ -164,7 +164,7 @@ section:first-of-type {
     padding: 10px;
     margin-bottom: 20px;
     color: var(--red);
-    background-color: var(--off-white);
+    background-color: var(--white);
     width: 100%;
 }
 
@@ -175,7 +175,7 @@ section:first-of-type {
 
 .icon-section svg {
     margin-bottom: 20px;
-    color: var(--off-white) !important;
+    color: var(--white) !important;
     background-color: var(--red);
     height: 100px;
     width: 100px !important;
@@ -247,18 +247,18 @@ section:first-of-type {
 #footer {
     padding: 50px 0px;
     width: 100%;
-    color: var(--off-white);
+    color: var(--white);
     background-color: var(--red);
 }
 
 #footer > div > a {
-    color: var(--off-white);
+    color: var(--white);
     margin: 20px;
 }
 
 #footer > * {
     margin-bottom: 20px;
-    color: var(--off-white);
+    color: var(--white);
 }
 
 @media only screen and (max-width: 992px) {
