@@ -41,7 +41,7 @@ $(document).ready(function () {
     //an array of drops - one per column
     var drops = [];
     //x below is the x coordinate
-    //1 = y co-ordinate of the drop(same for every drop initially)
+    //1 = y coordinate of the drop(same for every drop initially)
     for(var x = 0; x < columns; x++)
         drops[x] = 1; 
 
@@ -114,6 +114,12 @@ $(document).ready(function () {
         
         canvasBackgroundColor = mainColor;
         canvasTextColor = altColor;
+    });
+    $('.day').click(function() {
+        $('.day').removeClass('active');
+        $('.schedule-day').removeClass('active');
+        $(this).addClass('active');
+        $('#' + $(this).data('target')).addClass('active');
     });
     
 });

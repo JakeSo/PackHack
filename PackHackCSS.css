@@ -1,6 +1,7 @@
 /* Variables */
 :root {
     --red: #CC0000;
+    --dark-red: #A94A64;
     --white: #FFF;
     --grey: #CED3DC;
     --black: #2D2D2A;
@@ -99,6 +100,10 @@ body, html {
     box-shadow: 0px 0px 20px var(--grey);
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -118,6 +123,10 @@ canvas {
 #header {
     color: var(--white);
     height: 100vh;
+}
+
+.short-text {
+    display: none;
 }
 
 .col-centered {
@@ -155,11 +164,6 @@ section:first-of-type {
     padding-top: 80px;
 }
 
-#schedule {
-    background-color: var(--white);
-    padding: 80px 0px 0px 0px;
-}
-
 .section-title {
     padding: 10px;
     margin-bottom: 20px;
@@ -194,6 +198,38 @@ section:first-of-type {
   height: 50%;
   width: 1px;  /* or 100px */
   border-right:1px solid var(--grey);
+}
+
+.day {
+    color: var(--black);
+}
+
+.day:hover {
+    color: var(--red);
+}
+
+.day.active {
+    color: var(--red);
+}
+
+.schedule-day {
+    display: none;
+}
+
+.schedule-day.active {
+    display: block;
+}
+
+.schedule-day > div {
+    padding-bottom: 10px;
+}
+
+.schedule-day > div > div:first-child {
+    text-align: right;
+}
+
+.schedule-day > div > div:nth-child(2) {
+    color: var(--dark-red);
 }
 
 .question {
@@ -278,6 +314,14 @@ section:first-of-type {
 @media only screen and (max-width: 768px) {
     #footer > div > a {
         margin: 15px;
+    }
+    
+    .long-text {
+        display: none;
+    }
+    
+    .short-text {
+        display: initial;
     }
 }
 
