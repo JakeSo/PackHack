@@ -212,6 +212,10 @@ section:first-of-type {
     color: var(--red);
 }
 
+#schedule {
+    display: none;
+}
+
 .schedule-day {
     display: none;
 }
