@@ -1,7 +1,26 @@
 //document ready
 $(document).ready(function () {
     window.scrollTo(0, 1);
+    document.addEventListener('readystatechange', function() {
+        if (document.readyState === "complete") {
+          init();
+        }
+      });
+    function init() {
     
+    var modal = document.getElementById("myModal");
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+}
     //Globals
     var canvasBackgroundColor = "rgb(204, 0, 0)",
         canvasTextColor = "rgb(255, 255, 255)",
@@ -145,21 +164,3 @@ $(window).scroll(function () {
 
     })
 });
-
-var modal = document.getElementById("myModal");
-
-var btn = document.getElementById("myBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
